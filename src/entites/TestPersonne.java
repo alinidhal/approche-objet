@@ -8,33 +8,15 @@ public class TestPersonne {
 
 //		1ere personne
 		
-		AdressePostale adresse1 = new AdressePostale();
+		AdressePostale adresse1 = new AdressePostale(8, "Rue de la rosaire", 34170, "Castelnau-le-Lez");
 		
-		adresse1.numeroRue = 8;
-		adresse1.libelléRue = "Rue de la rosaire";
-		adresse1.codePostal = 34170;
-		adresse1.ville = "Castelnau-le-Lez";
-		
-		Personne personne1 = new Personne();
-		
-		personne1.nom = "Ali";
-		personne1.prenom = "Nidhal";
-		personne1.adresse = adresse1;
+		Personne personne1 = new Personne("Naruto", "UZUMAKI");
 
 // 		La 2eme personne		
 		
-		AdressePostale adresse2 = new AdressePostale();
+		AdressePostale adresse2 = new AdressePostale(36, "Rue du jet d'eau", 13003, "Marseille");
 		
-		adresse2.numeroRue = 36;
-		adresse2.libelléRue = "Rue du jet d'eau";
-		adresse2.codePostal = 13003;
-		adresse2.ville = "Marseille";
-		
-		Personne personne2 = new Personne();
-		
-		personne2.nom = "Ali";
-		personne2.prenom = "Nidhal";
-		personne2.adresse = adresse2;
+		Personne personne2 = new Personne("Sasuke", "UCHIWA", adresse2);
 		
 	}
 }
