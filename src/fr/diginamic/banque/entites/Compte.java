@@ -2,8 +2,8 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 
-	private long numeroCompte;
-	private double soldeCompte;
+	protected long numeroCompte;
+	protected double soldeCompte;
 	
 	public Compte(long numeroCompte, double soldeCompte) {
 		
@@ -11,6 +11,15 @@ public class Compte {
 		this.soldeCompte =  soldeCompte;
 		
 	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Compte [numeroCompte=" + numeroCompte + ", soldeCompte=" + soldeCompte + "]";
+	}
+
+
 
 	public long getNumeroCompte() {
 		return numeroCompte;
