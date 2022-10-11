@@ -4,9 +4,9 @@ import entites.AdressePostale;
 
 public class Personne {
 	
-	public String nom;
-	public String prenom;
-	public AdressePostale adresse;
+	private String nom;
+	private String prenom;
+	private AdressePostale adresse;
 	
 	public Personne(String nvPrenom, String nvNom) {
 		
