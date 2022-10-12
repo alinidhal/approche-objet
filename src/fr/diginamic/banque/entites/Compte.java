@@ -2,13 +2,13 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 
-	protected long numeroCompte;
-	protected double soldeCompte;
+	protected long numero;
+	protected double solde;
 	
-	public Compte(long numeroCompte, double soldeCompte) {
-		
-		this.numeroCompte =  numeroCompte;
-		this.soldeCompte =  soldeCompte;
+	public Compte(long numero, double solde) {
+		super();
+		this.numero =  numero;
+		this.solde =  solde;
 		
 	}
 	
@@ -16,25 +16,25 @@ public class Compte {
 
 	@Override
 	public String toString() {
-		return "Compte [numeroCompte=" + numeroCompte + ", soldeCompte=" + soldeCompte + "]";
+		return "Compte [numero = " + numero + ", solde = " + solde + " €"+"]";
 	}
 
 
 
-	public long getNumeroCompte() {
-		return numeroCompte;
+	public long getNumero() {
+		return numero;
 	}
 
-	public void setNumeroCompte(long numeroCompte) {
-		this.numeroCompte = numeroCompte;
+	public void setNumero(long numero) {
+		this.numero = numero;
 	}
 
-	public double getSoldeCompte() {
-		return soldeCompte;
+	public double getSolde() {
+		return solde;
 	}
 
-	public void setSoldeCompte(double soldeCompte) {
-		this.soldeCompte = soldeCompte;
+	public void setSoldeCompte(double solde) {
+		this.solde = solde;
 	}
 
 	
