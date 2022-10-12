@@ -15,7 +15,7 @@ public abstract class Operation {
 
 	@Override
 	public String toString() {
-		return getType() +  " Operation [date = " + date + " | montant = " + montant +" €" + "]";
+		return getType() +  " : Operation [date = " + date + " | montant = " + montant +" €" + "]";
 	}
 
 	public abstract String getType();

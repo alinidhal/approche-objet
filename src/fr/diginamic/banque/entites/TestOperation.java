@@ -24,7 +24,7 @@ public class TestOperation {
 		
 			System.out.println(operations[i]);
 		}
-		System.out.println("Total des opérations " + somme);
+		System.out.println("\nTotal des opérations : " + somme);
 	}
 
 }
