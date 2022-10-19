@@ -31,34 +31,27 @@ public class TestCalendar {
 		System.out.println(dateFormatee2);
 		
 		// Format France
-		Calendar cal3 = Calendar.getInstance();
+		Calendar calJour = Calendar.getInstance();
 		
-		Date date3 = cal3.getTime();
+		Date dateJour = calJour.getTime();
 		
-		SimpleDateFormat formateur3 = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", Locale.FRANCE);
-		String dateFormatee3 = formateur3.format(date3);
+		SimpleDateFormat formateurFR = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", Locale.FRANCE);
+		String dateFormateeFR = formateurFR.format(dateJour);
 		
-		System.out.println(dateFormatee3);
+		System.out.println(dateFormateeFR);
 		
 		// Format Ruisse
-		Calendar cal4 = Calendar.getInstance();
-	
-		Date date4 = cal4.getTime();
 		
-		SimpleDateFormat formateur4 = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", new Locale("ru", "RU"));
-		String dateFormatee4 = formateur4.format(date4);
+		SimpleDateFormat formateurRU = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", new Locale("ru", "RU"));
+		String dateFormateeRU = formateurRU.format(dateJour);
 		
-		System.out.println(dateFormatee4);
+		System.out.println(dateFormateeRU);
 		
 		// Format Chinois
-		Calendar cal5 = Calendar.getInstance();
+		SimpleDateFormat formateurCH = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", Locale.CHINA);
+		String dateFormateeCH = formateurCH.format(dateJour);
 		
-		Date date5 = cal5.getTime();
-		
-		SimpleDateFormat formateur5 = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", Locale.CHINA);
-		String dateFormatee5 = formateur5.format(date5);
-		
-		System.out.println(dateFormatee5);
+		System.out.println(dateFormateeCH);
 	}
 
 }
