@@ -23,10 +23,7 @@ public class TestCalendar {
 		
 		Calendar cal2 = Calendar.getInstance();
 		
-		cal.set(0, 0);
 		Date date2 = cal2.getTime();
-		
-		System.out.println(date2);
 		
 		SimpleDateFormat formateur2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		String dateFormatee2 = formateur2.format(date2);
@@ -36,7 +33,6 @@ public class TestCalendar {
 		// Format France
 		Calendar cal3 = Calendar.getInstance();
 		
-		cal.set(0, 0);
 		Date date3 = cal3.getTime();
 		
 		SimpleDateFormat formateur3 = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", Locale.FRANCE);
@@ -46,8 +42,7 @@ public class TestCalendar {
 		
 		// Format Ruisse
 		Calendar cal4 = Calendar.getInstance();
-		
-		cal.set(0, 0);
+	
 		Date date4 = cal4.getTime();
 		
 		SimpleDateFormat formateur4 = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", new Locale("ru", "RU"));
@@ -58,7 +53,6 @@ public class TestCalendar {
 		// Format Chinois
 		Calendar cal5 = Calendar.getInstance();
 		
-		cal.set(0, 0);
 		Date date5 = cal5.getTime();
 		
 		SimpleDateFormat formateur5 = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", Locale.CHINA);
