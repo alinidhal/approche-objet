@@ -1,0 +1,41 @@
+package listes;
+
+import java.util.Iterator;
+
+public class Ville {
+
+	protected String nom;
+	protected int nbHabitants;
+	
+	public Ville(String nom, int nbHabitants) {
+		super();
+		this.nom=nom;
+		this.nbHabitants=nbHabitants;
+	}
+	
+	@Override
+	public String toString() {
+		return "Ville [ "+ nom +", "  + nbHabitants + " hab ]\n";
+	}
+	
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public int getNbHabitants() {
+		return nbHabitants;
+	}
+
+	public void setNbHabitants(int nbHabitants) {
+		this.nbHabitants = nbHabitants;
+	}
+
+	
+
+
+}
