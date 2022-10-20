@@ -42,32 +42,36 @@ public class TestVille {
 		System.out.println("Ville la plus peuplée : [ " + villeMaxName + ", "+ nbHabitantsMax + " hab.]\n");
 		
 		// Trouver et supprimer la ville la moins peuplée de la liste
-		int nbHabitantsMin = Integer.MAX_VALUE;
 		
-		String villeMinName = "";	
+		// J'initialise le nombre d'habitants minimal
+		// Le nom de la ville minimal 
+		// Et l'index minimu de 0
+		int nbHabitantsMin = (liste.get(0)).getNbHabitants();
+		String villeMinName = (liste.get(0)).getNom();
+		int iVilleMin = liste.indexOf(0);
 		
-		Iterator<Ville> it = liste.iterator();
-		
-		while (it.hasNext()) {
-			Ville v = it.next();
-			if (v.getNbHabitants()<nbHabitantsMin) {
-				nbHabitantsMin=v.getNbHabitants();
-				villeMinName=v.getNom();
-				it.remove();
-				
+		// Je fais ma boucle 
+		for (int i = 0; i < liste.size(); i++) {
+			if ((liste.get(i)).getNbHabitants() < nbHabitantsMin) {
+				nbHabitantsMin = (liste.get(i)).getNbHabitants();
+				villeMinName = (liste.get(i)).getNom();
+				iVilleMin = (liste.indexOf(liste.get(i)));
 			}
-			
-			
 		}
+		// Suppression de la ville la moins peuplée 
+		liste.remove(iVilleMin);
 		
-		System.out.println(liste + "LISTE");
-		System.out.println("La ville de " + villeMinName + " a été supprimée, c'est la moins peuplée avec " + nbHabitantsMin + " hab.]\n");
+		System.out.println("Liste des villes après suppression de " +villeMinName+ 
+				", ville la moins peuplée avec "+ nbHabitantsMin + " hab. \n" + liste);
 		
-		int minVille = 100000;
-		
-		for(int i=minVille; i<liste.size(); i++) {
-			if(i<minVille) {}
+		// Mettre les villes de plus de 100_000 habitants en MAJ
+		for (int i = 0; i < liste.size(); i++) {
+			if (((liste.get(i)).getNbHabitants() > 100000)) {		
+				(liste.get(i)).setNom((liste.get(i).getNom()).toUpperCase());
+			}
 		}
+
+		System.out.println("Mettre en MAJ les villes avec plus de 100_000 habitants \n" +liste);
 	
 	}
 

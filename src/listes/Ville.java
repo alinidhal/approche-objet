@@ -51,6 +51,12 @@ public class Ville {
 		this.nbHabitants = nbHabitants;
 	}
 
+	public String toUpperCase() {
+		// TODO Auto-generated method stub
+		return nom.toUpperCase() ;
+	}
+
+
 	
 
 
