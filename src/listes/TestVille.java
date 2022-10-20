@@ -66,7 +66,7 @@ public class TestVille {
 		
 		// Mettre les villes de plus de 100_000 habitants en MAJ
 		for (int i = 0; i < liste.size(); i++) {
-			if (((liste.get(i)).getNbHabitants() > 100000)) {		
+			if ((liste.get(i)).getNbHabitants() > 100000){		
 				(liste.get(i)).setNom((liste.get(i).getNom()).toUpperCase());
 			}
 		}
